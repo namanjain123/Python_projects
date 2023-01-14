@@ -4,6 +4,10 @@ from PIL import Image
 import PyPDF2 as pypdf2
 import urllib
 import io
+from Screenshot import Screenshot_clipping
+import pyautogui
+
+ 
 #Check is this is a valid Web Page
 
 
@@ -39,7 +43,8 @@ if(is_url(input_web_page)):
         driver.implicitly_wait(100)
         
         # Take a screenshot
-        screenshots.append(driver.get_screenshot_as_png())
+        takeScreenshot = pyautogui.screenshot()
+        screenshots.append(takeScreenshot)
 
     # Create a PDF from the screenshots
     pdf_buffer = io.BytesIO()
