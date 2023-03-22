@@ -1,0 +1,8 @@
+// JSON Flowchart
+digraph {
+	node [style=rounded]
+	"name: John" [fillcolor="#c1f5c3" shape=ellipse style=filled]
+	"age: 30" [fillcolor="#c1f5c3" shape=ellipse style=filled]
+	"city: New York" [fillcolor="#c1f5c3" shape=ellipse style=filled]
+	"children: [{'name': 'Mary', 'age': 5}, {'name': 'Peter', 'age': 7}]" [fillcolor="#c1f5c3" shape=ellipse style=filled]
+}
